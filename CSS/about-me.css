@@ -1,0 +1,116 @@
+/* +++ FONTS +++ */
+@import url('https://fonts.googleapis.com/css2?family=Pacifico&display=swap');
+
+/* +++ RESET +++ */
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    scroll-behavior: smooth;
+    line-height: 35px;
+    letter-spacing: .5px;
+}
+
+body {
+    background-color: #1F1F24;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+/* +++ HEADER +++*/
+header {
+    height: 6em;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 1000;
+}
+
+.header {
+    height: 100%;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #1F1F24;
+    padding: 0 10em;
+}
+
+.header__logo {
+    font-family: 'Pacifico', cursive;
+    color: #b3b3b3;
+    font-size: 2.5em;
+}
+
+.logo__link {
+    text-decoration: none;
+    color: #b3b3b3;
+}
+
+.header__nav {
+    display: flex;
+    list-style: none;
+    justify-content: space-between;
+    align-items: center;
+    gap: 2em;
+    font-size: 1.5em;
+    color: #b3b3b3;
+    font-weight: bold;
+}
+
+.nav-list__item {
+    position: relative;
+}
+
+.nav-list__link{
+    text-decoration: none;
+    color: #b3b3b3;
+}
+
+.nav-list__link:hover {
+    color: #96353C;
+}
+
+.nav-list__link:focus::after {
+    content: ''; /* Required to create a pseudo-element */
+    display: block; /* Convert pseudo-element to a block-level element */
+    width: 10px; /* Adjust the width of the dot as per your preference */
+    height: 10px; /* Adjust the height of the dot as per your preference */
+    background-color: currentColor; /* Color of the dot */
+    border-radius: 50%; /* Make the dot circular */
+    position: absolute; /* Position the dot relative to the link */
+    bottom: -17px; /* Adjust the distance of the dot from the link text */
+    left: 50%; /* Position the dot horizontally in the middle of the link */
+    transform: translateX(-50%); /* Center the dot horizontally */
+}
+
+/* +++ MAIN +++ */
+
+main {
+    padding: 8em 15em;
+    color: #b3b3b3;
+}
+
+.cv__curriculum-vitae-heading {
+    color: #52BEAC;
+    margin: 5em 0 3em 0;
+}
+
+.heading-two {
+    color: #52BEAC;
+    margin: 1.5em 0 1em 0;
+}
+
+.heading-three {
+    color: #52BEAC;
+    margin: .5em 0 .3em 0;
+}
+
+.cv__dci-paragraph-two,
+.cv__web-developer-paragraph, 
+.cv__freelance-paragraph {
+    font-style: italic;
+}

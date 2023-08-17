@@ -1,0 +1,292 @@
+/* +++ FONTS +++ */
+@import url('https://fonts.googleapis.com/css2?family=Pacifico&display=swap');
+
+/* +++ RESET +++ */
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    scroll-behavior: smooth;
+}
+
+body {
+    background-color: #1F1F24;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+/* +++ HEADER +++*/
+header {
+    height: 6em;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 1000;
+}
+
+.header {
+    height: 100%;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #1F1F24;
+    padding: 0 10em;
+}
+
+.header__logo {
+    font-family: 'Pacifico', cursive;
+    color: #b3b3b3;
+    font-size: 2.5em;
+}
+
+.logo__link {
+    text-decoration: none;
+    color: #b3b3b3;
+}
+
+.header__nav {
+    display: flex;
+    list-style: none;
+    justify-content: space-between;
+    align-items: center;
+    gap: 2em;
+    font-size: 1.5em;
+    color: #b3b3b3;
+    font-weight: bold;
+}
+
+.nav-list__item {
+    position: relative;
+}
+
+.nav-list__link{
+    text-decoration: none;
+    color: #b3b3b3;
+}
+
+.nav-list__link:hover {
+    color: #96353C;
+}
+
+.nav-list__link:focus::after {
+    content: ''; /* Required to create a pseudo-element */
+    display: block; /* Convert pseudo-element to a block-level element */
+    width: 10px; /* Adjust the width of the dot as per your preference */
+    height: 10px; /* Adjust the height of the dot as per your preference */
+    background-color: currentColor; /* Color of the dot */
+    border-radius: 50%; /* Make the dot circular */
+    position: absolute; /* Position the dot relative to the link */
+    bottom: -17px; /* Adjust the distance of the dot from the link text */
+    left: 50%; /* Position the dot horizontally in the middle of the link */
+    transform: translateX(-50%); /* Center the dot horizontally */
+}
+
+
+/* +++ MAIN +++ */
+
+main {
+    padding: 8em 15em;
+}
+
+/* --- INTRO SECTION --- */
+
+
+.intro-section {
+    height: 90vh;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 7em;
+    
+}
+
+
+
+/* INTRO TEXT */
+
+.intro-text {
+    font-size: 3em;
+    color: #b3b3b3;
+    line-height: 1.3em;
+}
+
+.intro-text__line-4 {
+    color: #535353;
+    margin-top: .5em;
+}
+
+.intro-text__line-4 {
+    transform: type;
+}
+
+.line-highlight {
+    color: #96353C;
+}
+
+.img-container__img {
+    min-height: 400px;
+    max-height: 70vh;
+    opacity: .5;
+    border-radius: 20%;
+}
+
+/* --- ABOUT ME SECTION --- */
+
+.about-me-section{
+    padding-top: 10em;
+}
+
+
+.about-me-section__heading {
+    color: #52BEAC;
+    margin-bottom: 1em;
+}
+
+.about-me-section__about-me-paragraph {
+    width: 70%;
+    color: #b3b3b3;
+    font-size: 20px;
+    line-height: 35px;
+    letter-spacing: .5px;
+}
+
+.more__link {
+    display: inline-block;
+    color: #b3b3b3;
+    font-size: 20px;
+    line-height: 35px;
+    letter-spacing: .5px;
+    margin-top: 20px;
+}
+
+.more__link:hover {
+    color: #52BEAC;
+    font-size: 20px;
+    line-height: 35px;
+    letter-spacing: .5px;
+}
+
+/* --- SKILLS SECTION --- */
+
+.skills-section{
+    padding-top: 3em;
+}
+
+
+.skills-section__expertise {
+    color: #b3b3b3;
+    font-size: 20px;
+    line-height: 35px;
+    letter-spacing: .5px;
+    margin-bottom: 0.6em;
+}
+
+.skills-section__heading {
+    color: #52BEAC;
+    margin: 5em 0 1em 0;
+}
+
+.skills-section__icon {
+    font-size: 150px;
+    color: #b3b3b3;
+    margin-right: 0.5em;
+}
+
+/* --- MY WORK SECTION --- */
+
+.my-work-section{
+    padding-top: 3em;
+}
+
+.my-work-section__heading {
+    color: #52BEAC;
+    margin: 5em 0 1em 0;
+}
+
+.my-work-section__selection-paragraph {
+    color: #b3b3b3;
+    font-size: 20px;
+    line-height: 35px;
+    letter-spacing: .5px;
+    margin-bottom: 0.6em;
+}
+
+.my-work-section__projects-wrapper {
+    display: flex;
+    justify-content: start;
+    align-items: center;
+    gap: 2em;
+}
+
+.project {
+    height: 35em;
+    width: 25em;
+    border-radius: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.projects__project-one {
+    background-color: #32293C;
+    color: #b3b3b3;
+    font-family: serif;
+}
+
+.project-one__img {
+    height: 70%;
+    width: 90%;
+    background-image: url(/IMG/technology-3243375_1280.jpg);
+    background-position: center;
+    background-size: cover;
+    margin-top: 2em;
+    border-radius: 20px;
+}
+
+.projects__project-two {
+    background-color: #96353C;
+    color: #b3b3b3;
+    font-family: serif;
+}
+
+.project-two__img {
+    height: 70%;
+    width: 90%;
+    background-image: url(/IMG/head-196541_1280.jpg);
+    background-position: center;
+    background-size: cover;
+    margin-top: 2em;
+    border-radius: 20px;
+}
+
+/* --- CONNECT SECTION */
+
+.connect-section__heading {
+    color: #52BEAC;
+    margin: 5em 0 1em 0;
+}
+
+.connect-section__link {
+    display: block;
+    color: #b3b3b3;
+    font-size: 20px;
+    line-height: 35px;
+    letter-spacing: .5px;
+    margin-bottom: 0.6em;
+}
+
+
+a[href^="mailto:"] {
+    color: #b3b3b3;
+    font-size: 20px;
+}
+
+
+
+
+
